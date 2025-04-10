@@ -1,3 +1,20 @@
 .pointer{
     cursor: pointer;
 }
+
+.common-bg{
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%) !important;
+}
+.styled-text {
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
+    background: -webkit-linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block; /* Ensures proper gradient application */
+}
+
+.invert{
+    filter: invert(1);
+}

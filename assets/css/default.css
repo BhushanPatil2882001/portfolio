@@ -176,7 +176,7 @@ nav{
     top: 0;
     width: 100%;
     z-index: 100;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .navmenu ul{
@@ -191,11 +191,21 @@ nav{
     opacity: 1;
 }
 
+.navmenu ul li img{
+    filter: invert(1);
+    width: 30px;
+}
+
+.pages-li, .home-li{
+    margin-left: 6px;
+}
+
 /* submenu start */
 
 .submenu{
     width: 250px;
     top: 42px;
+    left: 0px;
     border-radius: 20px !important;
     transform: scaleY(0.8);
     transform-origin: center top;
