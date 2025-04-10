@@ -1,0 +1,267 @@
+:root{
+    --secondary-color: #FFFFFF0A;
+    --accent-color: #F0FF6C;
+    --accent-secondary-color: #6BFDD9;
+    --black-color: #163031;
+    --divider-color: #FFFFFF0F;
+    --default-font: "Montserrat", serif;
+}
+*{
+    cursor: none;
+}
+
+body {
+    position: relative;
+    font-family: var(--default-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1em;
+    color: var(--text-color);
+    background: var(--black-color);
+}
+
+body::before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/section-bg-circle-shape.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* custom cursor */
+.cursor{
+    height: 20px;
+    width: 20px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0ms ease-in-out;
+    mix-blend-mode: difference;
+    /* z-index: 9999; */
+}
+
+/* preloader */
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+}
+
+.loading {
+    border: 1px solid transparent;
+    border-color: transparent var(--black-color) transparent var(--black-color);
+    animation: rotate-loading 1.5s linear 0s infinite normal;
+    transform-origin: 50% 50%;
+}
+.loading-container, .loading {
+    height: 100px;
+    position: relative;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.loading-container:hover .loading, .loading-container .loading {
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes rotate-loading{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loading-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 66px;
+    transform: translate(-50%, -50%);
+}
+/* background gridlines animation*/
+
+.grid-lines{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    --grid-line-color: var(--divider-color);
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    pointer-events: none;
+}
+
+.grid-line-1::before, .grid-line-2::before, .grid-line-3::before, .grid-line-4::before, .grid-line-5::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: -1px;
+    background: var(--grid-line-color);
+    width: 1px;
+}
+
+.grid-lines .grid-line-1::after{
+    animation: gridline 8s linear infinite;
+}
+.grid-lines .grid-line-2::after{
+    animation: gridline 9s linear infinite;    
+    animation-delay: 3s;
+}
+.grid-lines .grid-line-3::after{
+    animation: gridline 7s linear infinite;    
+    animation-delay: 6s;
+}
+.grid-lines .grid-line-4::after{
+    animation: gridline 10s linear infinite;    
+    animation-delay: 4s;;
+}
+.grid-lines .grid-line-5::after{
+    animation: gridline 9s linear infinite;    
+    animation-delay: 8s;
+}
+
+.grid-line-1::after, .grid-line-2::after, .grid-line-3::after, .grid-line-4::after, .grid-line-5::after{
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -1px;
+    background: linear-gradient(254deg, transparent 0%, var(--accent-color) 50%, var(--accent-secondary-color) 100%);
+    border-radius: 0;
+    opacity: 50%;
+    width: 1px;
+    height: 60px;
+}
+
+@keyframes gridline{
+    0% {
+        top: -50px;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+
+/* nav start */
+
+nav{
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    font-size: 20px;
+}
+
+.navmenu ul{
+    background: var(--divider-color);
+    border-radius: 30px;
+    padding: 0 15px;
+}
+
+.navmenu ul li:hover .submenu{
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* submenu start */
+
+.submenu{
+    width: 250px;
+    top: 42px;
+    border-radius: 20px !important;
+    transform: scaleY(0.8);
+    transform-origin: center top;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%) !important;
+    transition: 0.3s ease-in-out !important;
+}
+
+.submenu li{
+    padding: 16px 0px;
+    width: 100%;
+    transition: all 0.4s linear;
+}
+
+.submenu li:hover{
+    margin-left: 6px;
+}
+
+/* submenu end */
+
+/* download cv button start */
+
+.downloadCvBtn{
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%) !important;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: 600 !important;
+}
+
+/* download cv button end */
+
+/* toggle offcanvas start */
+
+.toggle-menu{
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%) !important;
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-weight: 600 !important;
+}
+
+#offcanvas{
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%) !important;
+}
+
+.collapse-dropdown-menu{
+    width: 200px;
+    position: absolute;
+    background: var(--black-color);
+}
+.collapse-dropdown-menu li{
+    padding: 10px 0;
+    padding-left: 10px;
+    transition: all 0.4s linear;
+}
+
+.collapse-dropdown-menu li:hover{
+    transform: translateX(0.8);
+    padding-left: 20px;
+}
+
+/* toggle offcanvas end */
+
+/* nav end */

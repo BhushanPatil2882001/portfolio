@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio site</title>
+    <!-- fonts -->
+    <!-- montserrat -->
+    <link rel="stylesheet" href="./assets/fonts/montserrat/stylesheet.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- stylessheets -->
+    <link rel="stylesheet" href="./assets/css/utility.css" />
+    <link rel="stylesheet" href="./assets/css/default.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- header start -->
+    <!-- preloader start  -->
+    <div class="preloader" style="display: none">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon">
+                <img class="mw-100" src="./assets/images/loader.svg" alt="" />
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+    <!-- gridlines start -->
+    <div class="grid-lines">
+        <div class="grid-line-1 position-relative h-100"></div>
+        <div class="grid-line-2 position-relative h-100"></div>
+        <div class="grid-line-3 position-relative h-100"></div>
+        <div class="grid-line-4 position-relative h-100"></div>
+        <div class="grid-line-5 position-relative h-100"></div>
+    </div>
+    <!-- gridlines end -->
+    <header>
+        <nav class="position-absolute">
+            <div class="container py-4 d-flex justify-content-between align-items-center">
+                <!-- logo start -->
+                <div class="logo">
+                    <img src="./assets/images/logo.svg" alt="logo" />
+                </div>
+                <div class="navmenu text-white d-xl-block d-none">
+                    <ul class="p-4 fw-semibold d-flex justify-content-center align-items-center gap-4 list-unstyled">
+                        <li class="pointer position-relative">
+                            Home
+                            <ul class="submenu position-absolute list-unstyled text-black">
+                                <li class="pointer">Home-Main</li>
+                                <li class="pointer">Home-Img</li>
+                                <li class="pointer">Home-Video</li>
+                                <li class="pointer">Home-Slider</li>
+                            </ul>
+                        </li>
+                        <li class="pointer">About Us</li>
+                        <li class="pointer">Services</li>
+                        <li class="pointer">Blog</li>
+                        <li class="pointer">
+                            Pages
+                            <ul class="submenu position-absolute list-unstyled text-black">
+                                <li class="pointer">Service Details</li>
+                                <li class="pointer">Blog-details</li>
+                                <li class="pointer">Portfolio</li>
+                                <li class="pointer">Our Team</li>
+                                <li class="pointer">Team Details</li>
+                                <li class="pointer">Pricing Plan</li>
+                                <li class="pointer">Testimonials</li>
+                                <li class="pointer">Image Gallery</li>
+                                <li class="pointer">Video Gallery</li>
+                                <li class="pointer">FAQs</li>
+                                <li class="pointer">404</li>
+                            </ul>
+                        </li>
+                        <li class="pointer">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="downloadCvBtn d-xl-block d-none">
+                    <button class="btn fw-semibold">Download CV</button>
+                </div>
+                <img class="btn toggle-menu d-xl-none" src="./assets/images/menu-line.svg" alt="" width="50px"
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" />
+                <!-- logo end -->
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main></main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer></footer>
+    <!-- footer end -->
+
+    <!-- cursor -->
+    <div class="cursor"></div>
+
+    <!-- javascripts -->
+
+    <!-- OFFCANVAS START -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="p-4 fw-semibold d-flex justify-content-center gap-4 list-unstyled flex-column">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu collapse-dropdown-menu text-white">
+                            <li class="pointer">Home-Main</li>
+                            <li class="pointer">Home-Img</li>
+                            <li class="pointer">Home-Video</li>
+                            <li class="pointer">Home-Slider</li>
+                        </ul>
+                    </li>
+                    <li class="pointer">About Us</li>
+                    <li class="pointer">Services</li>
+                    <li class="pointer">Blog</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu collapse-dropdown-menu text-white">
+                            <li class="pointer">Service Details</li>
+                            <li class="pointer">Blog-details</li>
+                            <li class="pointer">Portfolio</li>
+                            <li class="pointer">Our Team</li>
+                            <li class="pointer">Team Details</li>
+                            <li class="pointer">Pricing Plan</li>
+                            <li class="pointer">Testimonials</li>
+                            <li class="pointer">Image Gallery</li>
+                            <li class="pointer">Video Gallery</li>
+                            <li class="pointer">FAQs</li>
+                            <li class="pointer">404</li>
+                        </ul>
+                    </li>
+                    <li class="pointer">Contact Us</li>
+                </ul>
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- OFFCANVAS END -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/boostrap.bundle.min.js"></script>
+</body>
+
+</html>
