@@ -26,3 +26,56 @@ h1{
 }
 
 /* hero section end */
+
+/* scrolling ticker start */
+.our-scrolling-ticker{
+    position: relative;
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
+    padding: 20px 0;
+    z-index: 1;
+}
+
+.scrolling-ticker-box{
+    --gap: 20px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    align-items: center;
+}
+.scrolling-content{
+    flex-shrink: 0;
+    display: flex;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+.scrolling-content span{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: var(--black-color);
+    vertical-align: middle;
+}
+
+.scrolling-content span img{
+    width: 100%;
+    max-width: 30px;
+    margin-right: 20px;
+}
+/* scrolling ticker end */
+
+/* main end */
