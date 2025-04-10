@@ -6,8 +6,8 @@
     --divider-color: #FFFFFF0F;
     --default-font: "Montserrat", serif;
 }
-*{
-    cursor: none;
+body {
+    cursor: none
 }
 
 body {
@@ -239,6 +239,10 @@ nav{
     border-radius: 30px;
     padding: 10px 20px;
     font-weight: 600 !important;
+    transition: all 0.2s linear !important;
+}
+.downloadCvBtn:hover{
+    background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-color) 50%, var(--accent-secondary-color) 100%) !important;
 }
 
 /* download cv button end */

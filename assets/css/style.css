@@ -18,6 +18,11 @@ h1{
 .hero-btn{
     border-radius: 30px;
     padding: 14px 26px;
+    transition: all 0.2s linear;
+}
+.hero-btn:hover{
+    background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-color) 50%, var(--accent-secondary-color) 100%) !important;
+    color: black;
 }
 
 /* hero section end */
