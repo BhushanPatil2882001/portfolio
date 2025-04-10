@@ -18,3 +18,21 @@
 .invert{
     filter: invert(1);
 }
+
+.my-btn{
+    padding: 20px 30px;
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%) !important;;
+    color: black !important;
+    transition: all 0.2s linear;
+    border-radius: 40px;
+    border: none !important;
+}
+.my-btn:hover{
+    background: linear-gradient(254.54deg, var(--accent-secondary-color) 0.03%, var(--accent-color) 100%) !important;;
+    color: var(--black-color);
+}
+
+/* padding */
+.p-100{
+    padding: 180px 0;
+}

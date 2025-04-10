@@ -78,4 +78,69 @@ h1{
 }
 /* scrolling ticker end */
 
+/* our specialization start */
+
+.swiper{
+    margin-top: 60px;
+}
+
+.slider-card-top{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 90px;
+}
+
+.service-item-btn{
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.service-item-btn img{
+    transition: all 0.2s linear;
+}
+
+.service-item-btn:hover img{
+    rotate: 45deg;
+}
+
+.swiper-slide{
+    overflow: hidden;
+}
+
+.slider-card{
+    position: relative;
+    background: url(../images/our-specialization/service-item-bg-shape.svg) var(--secondary-color);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: auto;
+    backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(200px);
+    border: 1px solid var(--divider-color);
+    border-radius: 20px;
+    padding: 40px 30px;
+    overflow: hidden;
+}
+
+.swiper-pagination-bullet{
+    height: 10px;
+    width: 10px;
+    background: var(--divider-color);
+    opacity: 1;
+    margin: 0 3px;
+    transition: all 0.4s ease-in-out;
+}
+
+.swiper-pagination-bullet-active{
+    position: relative;
+    width: 30px;
+    border-radius: 100px;
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
+}
+
+/* our specialization end */
+
 /* main end */
