@@ -169,6 +169,7 @@ nav{
     background: var(--divider-color);
     border-radius: 50px;
     padding: 0 15px;
+    margin-top: 14px;
 }
 
 .navmenu ul li:hover .submenu{
@@ -221,14 +222,15 @@ nav{
 /* download cv button start */
 
 .downloadCvBtn{
-    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%) !important;
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
     border-radius: 30px;
     padding: 10px 20px;
     font-weight: 600 !important;
     transition: all 0.2s linear !important;
+    color: var(--black-color) !important;
 }
 .downloadCvBtn:hover{
-    background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-color) 50%, var(--accent-secondary-color) 100%) !important;
+    background: linear-gradient(to right, var(--accent-color) 0%, var(--accent-color) 50%, var(--accent-secondary-color) 100%);
 }
 
 /* download cv button end */

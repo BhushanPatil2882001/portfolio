@@ -3,7 +3,7 @@
 }
 
 .common-bg{
-    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%) !important;
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
 }
 .styled-text {
     background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
@@ -16,23 +16,25 @@
 }
 
 .invert{
-    filter: invert(1);
+    filter: invert(1);  
 }
 
-.my-btn{
+.my-btn {
     padding: 20px 30px;
-    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%) !important;;
-    color: black !important;
-    transition: all 0.2s linear;
-    border-radius: 40px;
-    border: none !important;
-}
-.my-btn:hover{
-    background: linear-gradient(254.54deg, var(--accent-secondary-color) 0.03%, var(--accent-color) 100%) !important;;
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
     color: var(--black-color);
+    transition: all 0.2s linear !important;
+    border-radius: 40px;
+    border: none;
 }
-
+.my-btn:hover {
+    background: linear-gradient(254.54deg, var(--accent-secondary-color) 0.03%, var(--accent-color) 100%) !important;
+}
 /* padding */
-.p-100{
-    padding: 180px 0;
+.p-180{
+    padding: 180px 0 !important;
+}
+/* margin */
+.m-180{
+    margin: 180px 0 !important;
 }
