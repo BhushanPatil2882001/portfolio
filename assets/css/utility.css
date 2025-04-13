@@ -29,6 +29,7 @@
 }
 .my-btn:hover {
     background: linear-gradient(254.54deg, var(--accent-secondary-color) 0.03%, var(--accent-color) 100%) !important;
+    scale: 1.02;
 }
 /* padding */
 .p-180{

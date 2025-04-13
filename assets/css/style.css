@@ -263,4 +263,57 @@ h1{
 
 /* my tools section end */
 
+/* portfolio section start */
+
+.portfolio-img-container{
+    overflow: hidden !important;
+    height: 400px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.portfolio-img{
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/portfolio/portfolio-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.2s linear;
+}
+.portfolio-img-2{
+    background-image: url(../images/portfolio/portfolio-2.jpg);
+}
+.portfolio-img-3{
+    background-image: url(../images/portfolio/portfolio-3.jpg);
+}
+.portfolio-img:hover{
+    scale: 1.1;
+}
+
+.portfolio-btn{
+    top: 40%;
+    background: linear-gradient(to right, var(--accent-secondary-color) 0%, var(--accent-color) 50%, var(--accent-secondary-color) 100%);
+    left: 42%;
+    padding:20px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s linear;
+    scale: 0.2;
+}
+
+.portfolio-img:hover .portfolio-btn{
+    opacity: 1;
+    scale: 1;
+}
+
+.portfolio-btn:hover{
+    rotate: 45deg;
+}
+
+.portfolio-header{
+    margin-bottom: 80px;
+}
+
+/* portfolio section end */
+
 /* main end */
