@@ -291,9 +291,12 @@ h1{
 }
 
 .portfolio-btn{
-    top: 40%;
+    /* top: 40%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: linear-gradient(to right, var(--accent-secondary-color) 0%, var(--accent-color) 50%, var(--accent-secondary-color) 100%);
-    left: 42%;
+    /* left: 42%; */
     padding:20px;
     border-radius: 50%;
     opacity: 0;
@@ -307,7 +310,8 @@ h1{
 }
 
 .portfolio-btn:hover{
-    rotate: 45deg;
+    /* rotate: 45deg; */
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .portfolio-header{
@@ -315,5 +319,216 @@ h1{
 }
 
 /* portfolio section end */
+
+/* foundation start */
+
+.foundation-btn{
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: auto !important;
+}
+
+.foundation .icon-box{
+        /* display: block; */
+        background: linear-gradient(to right, var(--accent-secondary-color) 0%, var(--accent-color) 50%, var(--accent-secondary-color) 100%);
+        background-size: 200% auto;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        transition: all 0.5s ease-in-out;
+}
+.foundation .icon-box img{
+    position: relative;
+    width: 100%;
+    max-width: 30px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.foundation-box{
+    position: relative;
+    height: calc(100% - 30px);
+    background: url(../images/foundation-box-bg-shape.svg) var(--secondary-color);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: auto;
+    border: 1px solid var(--divider-color);
+    backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(200px);
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.foundation-box:hover .icon-box img{
+    transform: rotateY(180deg);
+}
+
+.foundation .container .row:first-child{
+    margin-bottom: 100px ;
+}
+
+/* foundation end */
+
+/* workflwo start */
+
+
+:root {
+    --bg: #163031;
+    --bg-shade-200: #163031;
+    --bg-shade-outline: #E0DDCF;
+
+    --font-color: #212121;
+
+    --spacing-32: 2rem;
+    --sapcing-24: 1.5rem;
+    --spacing-16: 1rem;
+    --spacing-1: 0.063rem;
+
+    --universal-transition: all 0.5s ease-in-out;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+    list-style: none;
+  }
+
+  /* svg */
+  circle-expand {
+    --svg-length: 1.5rem;
+
+    display: flex;
+
+    svg {
+        width: var(--svg-length);
+        height: var(--svg-length);
+      }
+      
+      svg circle {
+        stroke-dasharray: var(--circle-length);
+        stroke-dashoffset: 0;
+        transition: var(--universal-transition);
+      }
+      
+      svg path:nth-of-type(2) {
+        stroke-dasharray: var(--top-length);
+        stroke-dashoffset: 0;
+        transition: var(--universal-transition);
+      }
+      
+      svg path:nth-of-type(3) {
+        stroke-dasharray: var(--bottom-length);
+        stroke-dashoffset: 0;
+        transition: var(--universal-transition);
+      }      
+  }
+  
+
+  summary[expanded] {
+    circle-expand {
+      svg {
+        circle {
+          stroke-dashoffset: var(--circle-length);
+        }
+
+        path:nth-of-type(2) {
+          stroke-dashoffset: var(--top-length);
+        }
+
+        path:nth-of-type(3) {
+          stroke-dashoffset: var(--bottom-length);
+        }
+      }
+    }
+  }
+
+  details {
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
+    position: relative;
+    border: var(--spacing-1) solid var(--bg-shade-outline);
+    padding: clamp(1.5rem, calc(1.5rem + ((1vw - 0.28125rem) * 0.8081)), 2rem);
+    border-radius: var(--sapcing-24);
+    transition: var(--universal-transition);
+
+    details-content {
+      display: block;
+      overflow: hidden;
+      height: 0;
+      transition: var(--universal-transition);
+    }
+
+    &:has(summary[expanded]) {
+      background-color: var(--bg-shade-200);
+      border-color: var(--bg-shade-200);
+
+      p {
+        opacity: 1;
+      }
+    }
+
+    p {
+      opacity: 0;
+      line-height: 1.5;
+      margin-block: var(--sapcing-24);
+      transition: var(--universal-transition);
+    }
+  }
+
+  summary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-32);
+    list-style: none;
+    cursor: pointer;
+    transition: var(--universal-transition);
+
+    /* avoid Windows insertion caret */
+    caret-color: transparent;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary::marker {
+    content: '';
+  }
+
+  summary h3{
+    font-size: 20px;
+  }
+
+
+
+
+
+.img-glass-effect::after{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+
+.img-glass-effect:hover:after{
+    height: 250%;
+    transition: all 600ms linear;
+    background-color: transparent;
+}
+
+
+/* workflow end */
 
 /* main end */
