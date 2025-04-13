@@ -12,7 +12,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    display: inline-block; /* Ensures proper gradient application */
+    display: inline-block;
 }
 
 .invert{

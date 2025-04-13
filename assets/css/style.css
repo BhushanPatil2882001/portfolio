@@ -531,4 +531,52 @@ h1{
 
 /* workflow end */
 
+/* reviews section start */
+
+.user-image .img-2{
+    transform: translateX(-16px);
+}
+.user-image .img-3{
+    transform: translateX(-32px);
+}
+
+
+.reviews-card{
+    background: url(../images/testimonial-slider-bg-shape.svg) var(--secondary-color);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: auto;
+    border: 1px solid var(--divider-color);
+    backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(200px);
+    border-radius: 30px;
+    padding: 50px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    background: linear-gradient(to right, var(--accent-secondary-color) 0%, var(--accent-color) 50%, var(--accent-secondary-color) 100%);
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    width: 10px;
+}
+
+.swiper-button-next img{
+    padding-left: 16px;
+    padding-bottom: 16px;
+    rotate: 45deg;
+}
+.swiper-button-prev img{
+    rotate: -135deg;
+    margin-left: 16px;
+}
+
+.stars{
+    height: 30px;
+}
+
+/* reviews section end */
+
 /* main end */
