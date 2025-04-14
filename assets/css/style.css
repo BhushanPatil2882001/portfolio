@@ -567,7 +567,7 @@ h1{
     top: 180px;
 }
 .swiper-button-prev{
-    left: 400px;
+    left: 416px;
     top: 180px;
 }
 
@@ -578,7 +578,7 @@ h1{
 }
 .swiper-button-prev img{
     rotate: -135deg;
-    margin-left: 18px;
+    margin-left: 24px;
 }
 
 .stars{
@@ -613,5 +613,36 @@ h1{
 }
 
 /* faq section end */
+
+/* blog section start */
+
+.blog-img{
+    display: block;
+}
+
+.blog-container:hover .blog-img img{
+    transform: scale(1.1);
+}
+
+.blog-img img{
+    aspect-ratio: 1 / 0.67;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.blog-img img::after{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+
+/* blog section end */
 
 /* main end */
