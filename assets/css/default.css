@@ -178,6 +178,7 @@ nav{
     border-radius: 50px;
     padding: 0 15px;
     margin-top: 14px;
+    margin-left: 70px;
 }
 
 .navmenu ul li:hover .submenu{
@@ -200,7 +201,7 @@ nav{
 .submenu{
     width: 250px;
     top: 42px;
-    left: 0px;
+    left: -70px;
     border-radius: 20px !important;
     transform: scaleY(0.8);
     transform-origin: center top;

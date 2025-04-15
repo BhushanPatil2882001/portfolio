@@ -755,6 +755,7 @@ h1{
 
 .about-footer .logo{
     color: var(--black-color) !important;
+    margin-left: 0;
 }
 
 .footer-links h3 {
