@@ -645,4 +645,82 @@ h1{
 
 /* blog section end */
 
+/* form section start */
+
+.form-section .icon-box{
+    background: linear-gradient(to right, var(--accent-secondary-color) 0%, var(--accent-color) 50%, var(--accent-secondary-color) 100%);
+    background-size: 200% auto;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.view-resume-circle a img {
+    max-width: 120px;
+    animation: infiniterotate 20s infinite linear;
+}
+
+.view-resume-circle {
+    /* width: calc(35% - 15px); */
+    text-align: end;
+    margin-left: auto;
+}
+
+
+.contact-form{
+    background: url(../images/contact-form-bg-shape.svg) var(--secondary-color);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: auto;
+    border: 1px solid var(--divider-color);
+    backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(200px);
+    border-radius: 30px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+
+.contact-form form .form-control {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    padding: 17px 20px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--divider-color);
+    border-radius: 10px;
+    outline: none;
+    box-shadow: none;
+}
+
+.contact-form form .form-control::placeholder{
+    color: white;
+}
+
+.contactForm{
+    visibility: visible;
+    animation-delay: 0.2s;
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp{
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 40px, 0);
+        transform: translate3d(0, 40px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/* form section end */
+
 /* main end */
