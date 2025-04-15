@@ -160,6 +160,12 @@ body::before {
 
 /* nav start */
 
+.logo{
+    width: 70px;
+    font-family: "Molle", cursive;
+    margin-left: 40px;
+}
+
 nav{
     top: 0;
     width: 100%;
@@ -275,6 +281,11 @@ nav{
 .offcanvas-body button{
     background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%) !important;
     border-radius: 50px;
+}
+
+.offcanvas-header .btn-close.pointer{
+    filter: invert(1);
+    fill: #fff;
 }
 
 /* toggle offcanvas end */

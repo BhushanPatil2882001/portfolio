@@ -8,6 +8,8 @@
     <!-- fonts -->
     <!-- montserrat -->
     <link rel="stylesheet" href="./assets/fonts/montserrat/stylesheet.css" />
+    <!-- molle -->
+    <link rel="stylesheet" href="./assets/fonts/molle/stylesheet.css">
     <!-- swipper -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!-- bootstrap -->
@@ -44,8 +46,12 @@
         <nav class="position-absolute">
             <div class="container py-4 d-flex justify-content-between align-items-center">
                 <!-- logo start -->
-                <div class="logo">
-                    <img src="./assets/images/logo.svg" alt="logo"/>
+                <div class="logo d-flex align-items-center gap-2 text-white flex-column">
+                    <img src="./assets/images/logo.png" alt="logo" class="img-fluid"/>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <h3 class="h4 mb-0 fw-semibold lead">Bhushan</h3>
+                        <h3 class="h4 mb-0 fw-semibold lead">Patil</h3>
+                    </div>
                 </div>
                 <div class="navmenu text-white d-xl-block d-none">
                     <ul class="p-4 fw-semibold d-flex justify-content-center align-items-center gap-4 list-unstyled flex-row">
@@ -119,7 +125,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="bg-img d-flex align-items-center justify-content-center">
-                        <img src="./assets/images/hero-section/profile.png" alt="" class="img-fluid">
+                        <img src="./assets/images/hero-section/model.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -309,8 +315,8 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="about-us-img position-relative">
-                            <figure class=" text-center">
-                                <img  src="./assets/images/hero-section/cropped_image.png" alt="" class="img-fluid">
+                            <figure class=" text-center p-2">
+                                <img  src="./assets/images/circlular-model.png" alt="" class="img-fluid ">
                             </figure>
                         </div>
                     </div>
@@ -1017,13 +1023,16 @@
                 </div>
                 <div class="col-lg-5 col-md-12">
                     <!-- About Footer Start -->
-                    <div class="about-footer">
+                    <div class="about-footer d-flex flex-column">
                         <!-- Footer Logo Start -->
-                        <div class="footer-logo mb-4">
-                            <img src="./assets/images/footer/footer-logo.svg" alt="">
+                        <div class="logo d-flex align-items-center gap-2 text-white align-self-start mb-4">
+                            <img src="./assets/images/logo-dark.png" alt="logo" class="img-fluid"/>
+                            <div class="d-flex gap-2 justify-content-center align-items-center">
+                                <h3 class="h4 mb-0 fw-semibold lead">Bhushan</h3>
+                                <h3 class="h4 mb-0 fw-semibold lead">Patil</h3>
+                            </div>
                         </div>
                         <!-- Footer Logo End -->
-
                         <!-- About Footer Content Start -->
                         <div class="about-footer-content">
                             <p>Crafting intuitive, user-centric designs that bring ideas to life. With a passion for innovation and creativity, I help businesses and individuals.</p>
@@ -1108,8 +1117,14 @@
     <!-- OFFCANVAS START -->
     <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="offcanvas">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="logo d-flex align-items-center gap-2 text-white ms-1">
+                <img src="./assets/images/logo.png" alt="logo" class="img-fluid"/>
+                <div class="d-flex gap-2 justify-content-center align-items-center">
+                    <h3 class="h4 mb-0 fw-semibold lead">Bhushan</h3>
+                    <h3 class="h4 mb-0 fw-semibold lead">Patil</h3>
+                </div>
+            </div>
+            <img class="btn-close pointer" data-bs-dismiss="offcanvas" src="./assets/images/close-large-fill.svg" alt="" width="25px">
         </div>
         <div class="offcanvas-body">
             <div>
