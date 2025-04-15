@@ -724,3 +724,66 @@ h1{
 /* form section end */
 
 /* main end */
+
+
+
+
+
+/* footer start */
+
+.footer-header{
+    border-bottom: 1px solid var(--dark-divider-color);
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+}
+
+.main-footer {
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
+    padding: 80px 0 0;
+    color: var(--black-color);
+}
+
+.footer-social-links a img{
+    fill: white;
+}
+
+.about-footer{
+    width: 100%;
+    max-width: 415px;
+}
+
+.footer-links h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--black-color);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.footer-links ul li {
+    color: var(--black-color);
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.6em;
+}
+
+.footer-links ul li:hover{
+    color: var(--primary-color);
+}
+
+.footer-links ul li a {
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.footer-copyright-text {
+    text-align: center;
+    border-top: 1px solid var(--dark-divider-color);
+    margin-top: 60px;
+    padding: 40px 0;
+}
+
+
+
+/* footer end */
