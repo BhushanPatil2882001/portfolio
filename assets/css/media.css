@@ -4,6 +4,37 @@
     }
 }
 
+@media(max-width:1400px){
+    .swiper-button-prev{
+        left: 320px;
+    }
+}
+
+@media(max-width:1200px){
+    .swiper-button-prev{
+        left: 240px;
+    }
+}
+
 @media(max-width:992px){
-    
+    .swiper-button-prev{
+        left: 480px;
+    }
+}
+
+@media(max-width:768px){
+    .swiper-button-prev{
+        left: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .swiper-button-prev{
+        left: 0;
+        top: 160px;
+    }
+    .swiper-button-next{
+        right: 0;
+        top: 160px;
+    }
 }

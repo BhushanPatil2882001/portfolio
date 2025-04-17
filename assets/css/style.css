@@ -752,6 +752,10 @@ h1{
     top: 180px;
 }
 
+.swiper-button-next, .swiper-button-prev{
+    user-select: none;
+}
+
 .swiper-button-next img{
     padding-left: 16px;
     padding-bottom: 16px;

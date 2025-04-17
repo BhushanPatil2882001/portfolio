@@ -137,3 +137,20 @@ $('#number4').jQuerySimpleCounter({end: 246,duration: 2500});
 
 
 // counter end
+
+
+// add navbar background on scroll
+
+const navbar = document.querySelector("nav")
+console.log(navbar);
+
+window.onscroll = function(){
+  if(navbar){
+    if(window.scrollY > 400){
+      navbar.classList.add("black-nav")
+    }
+    else if(window.scrollY < 400){
+      navbar.classList.remove("black-nav")
+    }
+  }
+}
