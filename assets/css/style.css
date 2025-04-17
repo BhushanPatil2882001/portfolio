@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
 /* hero section start */
 
 .hero-section{
@@ -69,8 +70,6 @@ h1{
 /* scrolling ticker end */
 
 /* counter start */
-
-@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
 
 .sectionClass {
   padding: 20px 0px 50px 0px;
@@ -404,7 +403,7 @@ h1{
 /* my tools section start */
 
 .gears{
-    background: url(../images/tool-item-bg-shape.svg) var(--secondary-color);
+    background: var(--secondary-color);
     background-repeat: no-repeat;
     background-position: top left;
     border: 1px solid var(--divider-color);
@@ -533,7 +532,7 @@ h1{
 .foundation-box{
     position: relative;
     height: calc(100% - 30px);
-    background: url(../images/foundation-box-bg-shape.svg) var(--secondary-color);
+    background: var(--secondary-color);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: auto;
@@ -723,7 +722,7 @@ h1{
 
 
 .reviews-card{
-    background: url(../images/testimonial-slider-bg-shape.svg) var(--secondary-color);
+    background: var(--secondary-color);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: auto;
@@ -780,7 +779,7 @@ h1{
 /* faq section start */
 
 .contact-us-card{
-    background: url(../images/faq-cta-bg-shape.svg) var(--secondary-color);
+    background: var(--secondary-color);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: auto;

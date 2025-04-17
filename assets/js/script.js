@@ -142,7 +142,6 @@ $('#number4').jQuerySimpleCounter({end: 246,duration: 2500});
 // add navbar background on scroll
 
 const navbar = document.querySelector("nav")
-console.log(navbar);
 
 window.onscroll = function(){
   if(navbar){

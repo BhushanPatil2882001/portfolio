@@ -73,8 +73,7 @@ body::before {
     bottom: 0;
     z-index: 1000;
     background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
-    display: flex
-;
+    display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease-out;
