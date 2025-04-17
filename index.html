@@ -1196,36 +1196,44 @@
             <div>
                 <ul class="p-4 fw-semibold d-flex justify-content-center gap-4 list-unstyled flex-column">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Home
-                        </a>
-                        <ul class="dropdown-menu collapse-dropdown-menu text-white">
-                            <li class="pointer">Home-Main</li>
-                            <li class="pointer">Home-Img</li>
-                            <li class="pointer">Home-Video</li>
-                            <li class="pointer">Home-Slider</li>
-                        </ul>
+                        <p class="d-inline-flex gap-1">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Home
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapse">
+                            <div class="card card-body">
+                                <p class="pointer">Home-Main</p>
+                                <p class="pointer">Home-Img</p>
+                                <p class="pointer">Home-Video</p>
+                                <p class="pointer mb-0">Home-Slider</p>
+                            </div>
+                        </div>
                     </li>
                     <li class="pointer">About Us</li>
                     <li class="pointer">Services</li>
                     <li class="pointer">Blog</li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Pages
-                        </a>
-                        <ul class="dropdown-menu collapse-dropdown-menu text-white">
-                            <li class="pointer">Service Details</li>
-                            <li class="pointer">Blog-details</li>
-                            <li class="pointer">Portfolio</li>
-                            <li class="pointer">Our Team</li>
-                            <li class="pointer">Team Details</li>
-                            <li class="pointer">Pricing Plan</li>
-                            <li class="pointer">Testimonials</li>
-                            <li class="pointer">Image Gallery</li>
-                            <li class="pointer">Video Gallery</li>
-                            <li class="pointer">FAQs</li>
-                            <li class="pointer">404</li>
-                        </ul>
+                        <p class="d-inline-flex gap-1">
+                            <a class="btn nav-link dropdown-toggle" data-bs-toggle="collapse" href="#collapse-2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Pages
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapse-2">
+                            <div class="card card-body">
+                                <p class="pointer">Service Details</p>
+                                <p class="pointer">Blog-details</p>
+                                <p class="pointer">Portfolio</p>
+                                <p class="pointer">Our Team</p>
+                                <p class="pointer">Team Details</p>
+                                <p class="pointer">Pricing Plan</p>
+                                <p class="pointer">Testimonials</p>
+                                <p class="pointer">Image Gallery</p>
+                                <p class="pointer">Video Gallery</p>
+                                <p class="pointer">FAQs</p>
+                                <p class="pointer mb-0">404</p>
+                            </div>
+                        </div>
                     </li>
                     <li class="pointer">Contact Us</li>
                 </ul>

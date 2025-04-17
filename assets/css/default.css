@@ -9,6 +9,33 @@
     --default-font: "Montserrat", serif;
 }
 
+/* Apply to the whole page */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) var(--secondary-color) var(--accent-secondary-color); /* For Firefox */
+  }
+  
+  /* Chrome, Edge, Safari */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--secondary-color); /* Light translucent background */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--accent-color), var(--accent-secondary-color));
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+  }
+  
+  
+
 body {
     position: relative;
     font-family: var(--default-font);
@@ -212,7 +239,7 @@ nav{
 .submenu{
     width: 250px;
     top: 42px;
-    left: -70px;
+    left: -100px;
     border-radius: 20px !important;
     transform: scaleY(0.8);
     transform-origin: center top;
@@ -302,6 +329,15 @@ nav{
 
 .offcanvas-backdrop{
     filter: blur(200px) !important;
+}
+
+.collapse .card{
+    background-color:rgb(244, 255, 147);
+    color: var(--black-color);
+}
+
+.offcanvas-body .nav-item{
+    margin-bottom: -13px;
 }
 
 /* toggle offcanvas end */
