@@ -19,7 +19,7 @@
     filter: invert(1);  
 }
 
-.my-btn {
+/* .my-btn {
     padding: 20px 30px;
     background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
     color: var(--black-color);
@@ -30,7 +30,39 @@
 .my-btn:hover {
     background: linear-gradient(254.54deg, var(--accent-secondary-color) 0.03%, var(--accent-color) 100%) !important;
     scale: 1.02;
+} */
+
+.my-btn {
+    position: relative;
+    padding: 20px 30px;
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
+    color: var(--black-color);
+    border-radius: 40px;
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.2s linear;
 }
+
+.my-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(254.54deg, var(--accent-secondary-color) 0.03%, var(--accent-color) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.my-btn:hover::before {
+    opacity: 1;
+}
+
+.my-btn:hover {
+    transform: scale(1.02);
+}
+
 /* padding */
 .p-180{
     padding: 180px 0 !important;

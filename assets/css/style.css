@@ -71,6 +71,10 @@ h1{
 
 /* counter start */
 
+#projectFacts{
+    user-select: none;
+}
+
 .sectionClass {
   padding: 20px 0px 50px 0px;
   position: relative;
@@ -415,11 +419,30 @@ h1{
     margin-bottom: 30px;
     padding: 30px 25px;
     transition: all 0.2s linear;
+    user-select: none;
 }
+
+.gears::after {
+    scale: 0.2;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
+    opacity: 0;
+    transition: all 0.2s ease;
+    z-index: -1;
+    border-radius: 20px !important;
+  }
+  
+  .gears:hover::after {
+    opacity: 1;
+    scale: 1;
+  }
 
 .gears:hover{
     scale: 1.02;
     box-shadow: 2px 2px 10px 0px rgba(39, 39, 39, 0.671);
+    color: var(--black-color);
 }
 
 .icon-box{
@@ -432,12 +455,13 @@ h1{
     align-items: center;
     justify-content: center;
 }
-.icon-box img{
+.icon-box svg{
     max-width: 30px;
 }
 
 .my-tools-heading{
     margin-bottom: 70px;
+    user-select: none;
 }
 
 

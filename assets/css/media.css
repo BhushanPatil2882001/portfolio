@@ -38,3 +38,23 @@
         top: 160px;
     }
 }
+@media (max-width: 400px) {
+    .swiper-button-prev{
+        left: 0;
+        top: 200px;
+    }
+    .swiper-button-next{
+        right: 0;
+        top: 200px;
+    }
+}
+@media (max-width: 340px) {
+    .swiper-button-prev{
+        left: 0;
+        top: 235px;
+    }
+    .swiper-button-next{
+        right: 0;
+        top: 235px;
+    }
+}
