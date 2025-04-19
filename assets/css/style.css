@@ -551,7 +551,7 @@ h1{
   /* animation: shadow 2s linear none infinite; */
 /* } */
 
-/* @keyframes shadow {
+@keyframes shadow {
   0%{
     box-shadow: -10px 0px 20px 0px var(--accent-color);
   }
@@ -567,7 +567,7 @@ h1{
   100%{
     box-shadow: -10px 0px 20px 0px var(--accent-color);
   }
-} */
+}
 
 .portfolio-btn:hover{
     /* rotate: 45deg; */
@@ -908,6 +908,125 @@ h1{
     transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 1;
 }
+
+
+/* modal start*/
+
+.modal-body pre {
+  background-color: #1e1e1e; /* optional dark bg */
+  color: #eee;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.modal-title{
+  color: var(--accent-secondary-color);
+}
+.modal-header button{
+  filter: invert(1);
+}
+
+.modal-body .news-details .date {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 9px;
+  margin-top: 30px;
+}
+
+.modal .modal-dialog .modal-content {
+  padding: 45px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  z-index: 1;
+  background: var(--black-color);
+  box-shadow: var(--shadow-1);
+}
+
+.modal-body .news-details .date {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--accent-secondary-color);
+  font-weight: 500;
+  margin-bottom: 9px;
+}
+
+.modal-body .news-details .title, .modal-body .news-details h4{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--accent-secondary-color);
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.modal-body .comment-inner .title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--accent-secondary-color);
+  margin-bottom: 16px;
+}
+
+.modal-body .comment-inner .rnform-group {
+  margin-bottom: 20px;
+}
+
+.modal-body .comment-inner .rnform-group input {
+  background-color: #191b1e;
+  border-radius: 6px;
+  height: 55px;
+  transition: var(--transition);
+  border: 2px solid #191b1e;
+  padding: 0 15px;
+  font-size: 14px;
+  font-family: var(--font-primary);
+  color: var(--color-lightn);
+  box-shadow: var(--inner-shadow);
+  letter-spacing: 1px;
+}
+
+.modal-body .comment-inner .rnform-group textarea {
+  min-height: 205px;
+  background-color: #191b1e;
+  border-radius: 6px;
+  padding: 0;
+  transition: var(--transition);
+  border: 2px solid #191b1e;
+  padding: 15px 15px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: var(--font-secondary);
+  color: var(--color-lightn);
+  box-shadow: var(--inner-shadow);
+  letter-spacing: 1px;
+  resize: none;
+}
+
+a.rn-btn, button.rn-btn {
+  border-radius: 6px;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition);
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0 none;
+}
+
+.comment-inner{
+  margin-bottom: 30px;
+}
+
+/* modal end */
 
 /* blog section end */
 

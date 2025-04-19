@@ -8,6 +8,7 @@
     --divider-color: #FFFFFF0F;
     --dark-divider-color: #16151324;
     --default-font: "Montserrat", serif;
+    --shadow-1: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 }
 
 /* Apply to the whole page */
