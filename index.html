@@ -48,13 +48,13 @@
         <nav class="position-absolute">
             <div class="container p-2 d-flex justify-content-between align-items-center">
                 <!-- logo start -->
-                <div class="logo d-flex align-items-center gap-2 text-white flex-row flex-lg-row">
+                <a href="./index.html" class="logo text-decoration-none d-flex align-items-center gap-2 text-white flex-row flex-lg-row">
                     <img src="./assets/images/logo.png" alt="logo" class="img-fluid"/>
                     <div class="d-flex gap-2 justify-content-center align-items-center">
                         <h3 class="h4 mb-0 fw-semibold lead">Bhushan</h3>
                         <h3 class="h4 mb-0 fw-semibold lead">Patil</h3>
                     </div>
-                </div>
+                </a>
                 <div class="navmenu text-white d-xl-block d-none">
                     <ul class="p-3 fw-semibold d-flex justify-content-center align-items-center gap-4 list-unstyled flex-row">
                         <li class="pointer home-li position-relative d-flex align-items-center justify-content-center">
@@ -70,7 +70,9 @@
                         <li class="pointer">
                             <a class="text-white text-decoration-none" href="#about-me">About Me</a>
                         </li>
-                        <li class="pointer">Services</li>
+                        <li class="pointer">
+                            <a class="text-white text-decoration-none" href="#foundation">Education</a>
+                        </li>
                         <li class="pointer">Blog</li>
                         <li class="pointer pages-li position-relative d-flex align-items-center justify-content-center">
                             Pages 
@@ -117,8 +119,21 @@
                             <span class="dot"></span>
                             Your Vision, My Expertice
                         </p>
-                        <h1 class="fw-semibold"><span class="styled-text">I'm Bhushan,</span> <br/>Full-Stack Developer based in India. </h1>
-                        <p class="lh-base"> Hi, I'm Bhushan Patil, a passionate Full-Stack Developer based in the India. 
+                        <h1 class="fw-semibold"><span class="styled-text pb-3">I'm Bhushan,</span> <br/>
+                        <span class="header-caption">
+                            <span class="cd-headline clip is-full-width">
+                                <span class="cd-words-wrapper" style="width: 289.392px; overflow: hidden;">
+                                    <b class="is-hidden styled-text display-3 fw-semibold text-nowrap">Web Designer</b>
+                                    <b class="is-hidden styled-text display-3 fw-semibold text-nowrap">Web Developer</b>
+                                    <b class="is-hidden styled-text display-3 fw-semibold text-nowrap">Full-Stack Developer</b>
+                                    <b class="is-visible styled-text display-3 fw-semibold text-nowrap">Stylish Model</b>
+                                    <b class="is-hidden styled-text display-3 fw-semibold text-nowrap">Content Writer</b>
+                                </span>
+                            </span>
+                        </span>
+                         <br />based in India. </h1>
+                        
+                        <p class="lh-base"> Hi, I'm Bhushan Patil, a passionate Full-Stack Developer based in India. 
                             I specialize in crafting intuitive, user-centered digital experiences that merge beautiful 
                             design with robust functionality across the entire stack.</p>
                         <div class="hero-btns d-flex align-items-center justify-content-md-start justify-content-center gap-4 flex-wrap">
@@ -135,8 +150,11 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <div class="bg-img d-flex align-items-center justify-content-center mt-lg-0 mt-5">
-                        <img src="./assets/images/hero-section/model.png" alt="" class="img-fluid">
+                    <div class="bg-img d-flex align-items-center justify-content-center mt-lg-0 mt-5 position-relative">
+                        <img src="./assets/images/hero-section/model.png" alt="" class="img-fluid model">
+                        <h2 class="position-absolute">
+                            Web Developer
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -216,7 +234,7 @@
             <div class="container">
                 <div class="row text-white align-items-center">
                     <div class="col-lg-6">
-                        <div>
+                        <div class="text-center text-md-start">
                             <p class="position-relative dot-container">
                                 <span class="dot"></span>
                                 My Specialization
@@ -225,9 +243,9 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="d-flex flex-column align-items-start justify-content-between gap-3">
+                        <div class="d-flex flex-column align-items-start justify-content-between gap-3 text-center text-md-start">
                             <p class="lh-base">As a skilled web developer, I offer a range of services tailored to help you create exceptional digital products and experiences.</p>
-                            <button class="my-btn fs-5 fw-semibold">View All Services</button>
+                            <button class="my-btn fs-5 fw-semibold align-self-center align-self-md-start">View All Services</button>
                         </div>
                     </div>
                 </div>
@@ -362,7 +380,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="text-white">
+                        <div class="text-white text-center text-md-start mt-5 mt-md-0">
                             <p class="position-relative dot-container">
                                 <span class="dot"></span>
                                 About Me
@@ -371,7 +389,7 @@
                             <p class="lead fw-semibold lh-base">"Helping businesses grow with creative web design and development solutions."</p>
                             <p class="fs-5 lh-base">Hi, I'm Bhushan, a passionate web developer who thrives on turning ideas into visually stunning realities. With a love for creativity and a meticulous eye for detail.</p>
                         </div>
-                        <div class="mt-5 d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="mt-5 d-flex justify-content-center justify-content-md-between align-items-center flex-wrap">
                             <div class="text-white d-flex flex-column gap-5">
                                 <div class="contact-email d-flex gap-3">
                                     <div>
@@ -392,7 +410,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="text-white d-flex flex-column justify-content-center align-items-center xp-counter-wrapper">
+                            <div class="text-white d-flex flex-column justify-content-center align-items-center xp-counter-wrapper mt-4 mt-md-0">
                                 <div class="xp-counter">
                                     <div>
                                         <div class=""><span class="styled-text">0+</span></div>
@@ -459,7 +477,7 @@
         <section class="my-tools position-relative z-1 m-180 text-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 my-tools-heading">
+                    <div class="col-12 my-tools-heading text-center text-md-start ps-0">
                         <p class="position-relative dot-container">
                             <span class="dot"></span>
                             My Tools
@@ -539,7 +557,7 @@
         <!-- Portfolio Section Start -->
         <section class="portfolio position-relative z-1 m-180 text-white">
             <div class="container">
-                <div class="portfolio-header row align-items-center gy-5">
+                <div class="portfolio-header row align-items-center gy-5 text-center text-md-start ps-0">
                     <div class="col-md-7">
                         <p class="position-relative dot-container">
                             <span class="dot"></span>
@@ -570,7 +588,7 @@
                     </div>
                     <div class="col-md-6 col-xl-4">
                         <div class="portfolio-img-container">
-                            <a href="https://bhushanpatil2882001.github.io/new-spotify-clone/">
+                            <a href="https://bhushanpatil2882001.github.io/new-spotify-clone/" target="_blank">
                                 <div class="portfolio-img portfolio-img-2 position-relative">
                                     <div class="portfolio-btn position-absolute pointer">
                                         <img src="./assets/images/our-specialization/arrow-dark.svg" alt="">
@@ -585,7 +603,7 @@
                     </div>
                     <div class="col-md-6 col-xl-4">
                         <div class="portfolio-img-container">
-                            <a href="https://bhushanpatil2882001.github.io/elegant-site-clone/">
+                            <a href="https://bhushanpatil2882001.github.io/elegant-site-clone/" target="_blank">
                                 <div class="portfolio-img portfolio-img-3 position-relative">
                                     <div class="portfolio-btn position-absolute pointer">
                                         <img src="./assets/images/our-specialization/arrow-dark.svg" alt="">
@@ -604,46 +622,9 @@
                 </div>
             </div>
         </section>
-        
-      <div class="section-padding gallery-section" id="gallery">
-        <div class="container">
-          <!-- Section Title Start -->
-          <div class="text-center">
-            <h2 class="title styled-text">Our Gallery</h2>
-            <p class="text-white">Some Random Photos Lorem ipsum, dolor sit.</p>
-          </div>
-          <!-- Section Title End -->
-
-          <div id="btncontainer" class="filter">
-            <a class="btn btn-active" href="#all">ALL</a>
-            <a class="btn" href="#personal">Personal</a>
-            <a class="btn" href="#corporate">Corporate</a>
-            <a class="btn" href="#portal">Portal</a>
-          </div>
-
-          <!-- Gallery Section Start -->
-
-          <div class="gallery sets">
-            <a href="https://bhushanpatil2882001.github.io/doob-clone/" class="all corporate d-flex flex-column">
-                <img src="./assets/images/portfolio/doob.png"/>
-                <p class="text-center text-white">Doob</p>
-            </a>
-
-            <a href="https://bhushanpatil2882001.github.io/elegant-site-clone/" class="all corporate"><img src="./assets/images/portfolio/elegant.png"/></a>
-
-            <a href="https://bhushanpatil2882001.github.io/new-spotify-clone/" class="all corporate"><img src="./assets/images/portfolio/spotify.png"/></a>
-            
-            <a class="all personal"><img src="./assets/images/portfolio/porfolio-site.png"/></a>
-            <a href="https://bhushanpatil2882001.github.io/simple-music-player/" class="all personal">
-                <img src="./assets/images/portfolio/basic music player.png" alt="">
-            </a>
-            
-          </div>
-        </div>
-      </div>
         <!-- Portfolio Section End -->
         <!-- Foundation Section Start -->
-        <section class="foundation position-relative z-1 m-180">
+        <section class="foundation position-relative z-1 m-180" id="foundation">
             <div class="container text-white">
                 <div class="row">
                     <div class="col-12">
@@ -731,12 +712,12 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="d-flex flex-column gap-3">
-                            <p class="position-relative dot-container mt-5">
+                            <p class="position-relative dot-container mt-5 text-center text-md-start ps-0">
                                 <span class="dot"></span>
                                 How it Work
                             </p>
-                            <h2 class="display-5 fw-semibold lh-sm">the structured workflow behind <span class="styled-text">our success</span></h2>
-                            <p class="fs-5 lh-base">
+                            <h2 class="display-5 fw-semibold lh-sm text-center text-md-start ps-0">the structured workflow behind <span class="styled-text">our success</span></h2>
+                            <p class="fs-5 lh-base text-center text-md-start ps-0">
                                 Hi, I'm Bhushan, a passionate web developer who thrives on turning ideas into visually stunning realities. With a love for creativity and a meticulous eye for detail.
                             </p>
                             <div class="workflow-accordian">
@@ -790,13 +771,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div>
+                        <div class="text-center text-md-start ps-0">
                             <p class="position-relative dot-container">
                                 <span class="dot"></span>
                                 Reviews
                             </p>
                             <h2 class="display-6 fw-semibold">See what people are saying <span class="styled-text">about my work</span></h2>
-                            <div class="reviews-dp d-flex gap-3 flex-wrap">
+                            <div class="reviews-dp d-flex gap-3 flex-wrap justify-content-center justify-content-md-start">
                                 <div class="user-images d-flex">
                                     <span class="user-image">
                                         <img class="img-1 rounded-circle" src="./assets/images/reviews-section/anant-sir.jpeg" alt="" width="60px">
@@ -910,7 +891,7 @@
                             </span>
                             <p class="h4">You have different questions? Ask Away?</p>
                             <p>Work With People And Brands Worldwide</p>
-                            <button class="my-btn">Contact Me Now</button>
+                            <button class="my-btn fw-semibold">Contact Me Now</button>
                         </div>
                     </div>
                     <div class="col-12 col-lg-8 mt-lg-0 mt-5">
@@ -988,15 +969,17 @@
             <div class="container">
                 <div class="portfolio-header row align-items-center gy-5">
                     <div class="col-md-7">
-                        <p class="position-relative dot-container">
+                        <p class="position-relative dot-container text-center text-md-start ps-0">
                             <span class="dot"></span>
                             Latest Blog
                         </p>
-                        <h2 class="fw-semibold h1">Showcase of my latest Projects and <br> <span class="styled-text">creative work</span></h2>
+                        <h2 class="fw-semibold h1 text-center text-md-start ps-0">Showcase of my latest Projects and <br> <span class="styled-text text-center text-md-start ps-0">creative work</span></h2>
                     </div>
                     <div class="col-md-5">
-                        <p>From concept to completion, these works reflect my commitment to delivering high-quality, impactful solutions.</p>
-                        <button class="my-btn fw-semibold mt-3">View All Portfolio</button>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <p class="text-center text-md-start ps-0">From concept to completion, these works reflect my commitment to delivering high-quality, impactful solutions.</p>
+                            <button class="my-btn fw-semibold mt-3 ">View All Portfolio</button>
+                        </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -1052,14 +1035,14 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div>
-                            <p class="position-relative dot-container">
+                            <p class="position-relative dot-container text-center text-md-start ps-0">
                                 <span class="dot"></span>
                                 Contact Me
                             </p>
-                            <h2 class="h1">Get in touch to discuss <br /> your <span class="styled-text">next project</span></h2>
-                            <p class="lh-base mt-4">Are you ready to take your project to the next level? Whether you're looking for a new website a web application, or simple need advice.</p>
-                            <div class="d-flex align-items-center mt-5">
-                                <div>
+                            <h2 class="h1 text-center text-md-start ps-0">Get in touch to discuss <br /> your <span class="styled-text">next project</span></h2>
+                            <p class="lh-base mt-4 text-center text-md-start ps-0">Are you ready to take your project to the next level? Whether you're looking for a new website a web application, or simple need advice.</p>
+                            <div class="d-flex align-items-center mt-5 flex-wrap">
+                                <div class="d-flex flex-column">
                                     <div class="d-flex">
                                         <span class="icon-box">
                                             <img src="./assets/images/form-section/icon-location-black.svg" alt="">
@@ -1130,12 +1113,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="footer-header d-flex align-items-center justify-content-between flex-wrap">
-                        <div class="footer-title">
+                    <div class="footer-header d-flex align-items-center justify-content-xxl-between flex-wrap justify-content-center">
+                        <div class="footer-title text-center text-md-start ps-0">
                             <h2 class="display-2 fw-semibold text-uppercase">Ready to work with us?</h2>
                             <p class="fw-semibold">Partner with our design agency for your business with amazing results.</p>
                         </div>
-                        <div class="footer-get-started-circle">
+                        <div class="footer-get-started-circle mt-5 m-xxl-0">
                             <a href="contact.html"><img src="./assets/images/footer/get-started-circle-dark.png" alt=""></a>
                         </div>
                     </div>
@@ -1144,13 +1127,13 @@
                     <!-- About Footer Start -->
                     <div class="about-footer d-flex flex-column">
                         <!-- Footer Logo Start -->
-                        <div class="logo d-flex align-items-center gap-2 text-white align-self-start mb-4">
+                        <a href="./index.html" class="logo text-decoration-none d-flex align-items-center gap-2 text-white align-self-start mb-4">
                             <img src="./assets/images/logo-dark.png" alt="logo" class="img-fluid"/>
                             <div class="d-flex gap-2 justify-content-center align-items-center">
                                 <h3 class="h4 mb-0 fw-semibold lead">Bhushan</h3>
                                 <h3 class="h4 mb-0 fw-semibold lead">Patil</h3>
                             </div>
-                        </div>
+                        </a>
                         <!-- Footer Logo End -->
                         <!-- About Footer Content Start -->
                         <div class="about-footer-content">

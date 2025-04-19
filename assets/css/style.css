@@ -16,6 +16,31 @@ h1{
     background-size: contain;
 }
 
+.bg-img h2{
+  top: 20px;
+  -webkit-text-stroke: 1px var(--accent-secondary-color);
+  color: transparent;
+  font-family: var(--font-primary);
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 110px;
+  z-index: -1;
+  margin-bottom: 0;
+  animation: up-down 1s infinite alternate;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-10px);
+  }
+}
+
 /* hero section end */
 
 /* scrolling ticker start */
@@ -242,6 +267,10 @@ h1{
 
 .projectFactsWrap .item:hover span{
   background: white;
+}
+
+.item.wow{
+  height: 140px;
 }
 
 @media (max-width: 786px){
@@ -474,6 +503,8 @@ h1{
     height: 400px;
     width: 100%;
     border-radius: 30px;
+    background-color:rgba(0, 0, 0, 0.466);
+    transition: box-shadow 0.3s ease;
 }
 
 .portfolio-img{
@@ -481,8 +512,10 @@ h1{
     width: 100%;
     background-image: url(../images/portfolio/doob.png);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
     transition: all 0.2s linear;
+    display: block;
 }
 .portfolio-img-2{
     background-image: url(../images/portfolio/spotify.png);
@@ -513,6 +546,29 @@ h1{
     scale: 1;
 }
 
+.portfolio-img-container:hover{
+  box-shadow: 0px 0px 20px 0px var(--accent-color);
+  animation: shadow 2s linear none infinite;
+}
+
+@keyframes shadow {
+  0%{
+    box-shadow: -10px 0px 20px 0px var(--accent-color);
+  }
+  20%{
+    box-shadow: 0px -10px 20px 0px var(--accent-color);
+  }
+  50%{
+    box-shadow: 10px 0px 20px 0px var(--accent-color);
+  }
+  80%{
+    box-shadow: 0px 10px 20px 0px var(--accent-color);
+  }
+  100%{
+    box-shadow: -10px 0px 20px 0px var(--accent-color);
+  }
+}
+
 .portfolio-btn:hover{
     /* rotate: 45deg; */
     transform: translate(-50%, -50%) rotate(45deg);
@@ -523,203 +579,6 @@ h1{
 }
 
 
-
-
-  
-  a {
-    text-decoration: none;
-    cursor: pointer;
-    outline: 0;
-  }
-  
-  .section-padding {
-    padding-top: 80px;
-  }
-  
-  .gallery-section {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .title {
-    font-size: 46px;
-    font-weight: 700;
-    font-family: "Playfair Display", serif;
-  } 
-  
-  .filter {
-    text-align: center;
-    max-width: 1050px;
-    margin: auto;
-  }
-  
-  .btn {
-    padding: 10px 20px;
-    margin: 5px 4px 4px 0;
-    display: inline-block;
-    color: #003;
-    background: var(--accent-secondary-color);
-    transition: all 0.4s;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  .btn:hover,.btn-active {
-    background: var(--accent-color);
-    color: var(--black-color);
-    -webkit-transform: translateY(3px);
-    -ms-transform: translateY(3px);
-    transform: translateY(3px);
-  }
-  .gallery {
-    display: flex;
-    justify-content: center;
-    width: fit-content;
-    max-width: 1320px;
-    flex-wrap: wrap;
-    margin: 25px auto;
-    /* gap: 14px; */
-  }
-  .gallery a {
-    display: flex;
-  }
-  .gallery img {
-    width: 200px;
-    height: 220px;
-    object-fit: cover;
-    transition: 0.3s ease-in-out;
-    border-radius: 12px;
-    overflow: hidden;
-    margin: 10px 10px;
-  }
-  
-  .gallery img:hover {
-    transform: scale(1.1);
-  }
-  
-  .sets .hide,
-  .sets .pophide {
-    width: 0%;
-    opacity: 0;
-  }
-  
-  .closeBtn {
-    position: absolute;
-    font-size: 22px;
-    font-weight: 500;
-    right: 25px;
-    top: 25px;
-    color: white;
-    transition: 0.5s linear;
-    padding: 8px 40px;
-    border-radius: 25px;
-    background: red;
-    outline-offset: -6px;
-    outline: 2px solid #fff;
-  }
-  .closeBtn:hover {
-    cursor: pointer;
-    background: white;
-    color: black;
-    outline: 2px solid #000;
-  }
-  
-  .openDiv {
-    width: 100%;
-    height: 100vh;
-    background: #000000e7;
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    z-index: 9999;
-  }
-  .imgPreview {
-    width: 70%;
-    object-fit: scale-down;
-    max-height: 40vw;
-    height: auto;
-  }
-  .prevButton,
-  .nextButton {
-    transition: 1s linear;
-    padding: 10px 35px;
-    font-size: 18px;
-    border: none;
-    color: white;
-    background: #0005;
-    border-radius: 10px;
-    border: 1px solid white;
-    margin: 10px;
-  }
-  .prevButton:hover,
-  .nextButton:hover {
-    background: #fff;
-    color: black;
-  }
-  
-  /* resposive CSS Code */
-  
-  @media (max-width: 1199px) {
-    .section-padding {
-      padding-top: 70px;
-    }
-  }
-  @media (max-width: 991px) {
-    .section-padding {
-      padding-top: 50px;
-    }
-  }
-  @media (max-width: 767px) {
-    .title {
-      font-size: 36px;
-    }
-    .gallery img {
-      margin: 8px 8px;
-      width: 175px;
-    }
-    .closeBtn {
-      padding: 6px 25px;
-    }
-    .prevButton,
-    .nextButton {
-      font-size: 18px;
-      padding: 8px 25px;
-    }
-  }
-  
-  @media (max-width: 540px) {
-    .section-padding {
-      padding-top: 30px;
-    }
-    
-    .gallery img {
-      margin: 8px 6px;
-      width: 155px;
-    }
-  
-    .closeBtn {
-      font-size: 18px;
-      border-radius: 15px;
-    }
-    .prevButton,
-    .nextButton {
-      font-size: 18px;
-      padding: 6px 20px;
-      border-radius: 10px;
-      margin: 5px;
-    }
-  
-    .imgPreview {
-      width: 90%;
-      max-height: 50vh;
-      height: auto;
-    }
-    
-  }
 
 /* portfolio section end */
 

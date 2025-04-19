@@ -4,6 +4,7 @@
     --accent-color: #F0FF6C;
     --accent-secondary-color: #6BFDD9;
     --black-color: #163031;
+    --color-heading: #ffffff;
     --divider-color: #FFFFFF0F;
     --dark-divider-color: #16151324;
     --default-font: "Montserrat", serif;
@@ -215,7 +216,7 @@ nav{
     border-radius: 50px;
     padding: 0 15px;
     margin-top: 14px;
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 .navmenu ul li:hover .submenu{
@@ -232,13 +233,12 @@ nav{
 .pages-li, .home-li{
     margin-left: 6px;
 }
-
 /* submenu start */
 
 .submenu{
     width: 250px;
     top: 42px;
-    left: -100px;
+    left: -110px;
     border-radius: 20px !important;
     transform: scaleY(0.8);
     transform-origin: center top;

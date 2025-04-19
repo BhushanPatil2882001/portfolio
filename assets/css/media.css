@@ -26,6 +26,9 @@
     .swiper-button-prev{
         left: 300px;
     }
+    .dot{
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -46,6 +49,17 @@
     .swiper-button-next{
         right: 0;
         top: 200px;
+    }
+    .cd-headline b{
+        text-wrap: wrap !important;
+        font-size: 50px;
+    }
+    .bg-img h2{
+        font-size: 30px;
+    }
+    .view-resume-circle{
+        margin-right: auto;
+        margin-top: 20px;
     }
 }
 @media (max-width: 340px) {
