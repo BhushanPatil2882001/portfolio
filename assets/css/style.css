@@ -551,6 +551,14 @@ h1{
   /* animation: shadow 2s linear none infinite; */
 /* } */
 
+.element-item img{
+  transition: all 0.2s linear;
+}
+
+.grid .element-item:hover img{
+  scale: 1.1;
+}
+
 @keyframes shadow {
   0%{
     box-shadow: -10px 0px 20px 0px var(--accent-color);

@@ -60,6 +60,21 @@
     animation: shadow-btn 2s linear none infinite;
 }
 
+.filter-gallery-btn{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: var(--accent-secondary-color);
+    transition: all 0.2s linear;
+}
+.filter-gallery-btn.active{
+    background-color: var(--accent-color);
+}
+
+.filter-gallery-btn:hover{
+    background-color: var(--accent-color);
+}
+
 @keyframes shadow-btn {
     0%{
       box-shadow: -2px 0px 20px 0px var(--accent-color);
