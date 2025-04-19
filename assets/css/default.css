@@ -194,8 +194,10 @@ header{
 }
 
 header nav.black-nav{
-    /* background-color: #163031e7; */
-    background: linear-gradient(180deg,rgba(22, 48, 49, 1) 0%, rgba(22, 48, 49, 0.74) 50%, rgba(22, 48, 49, 0.44) 100%);
+    background-color: #163031e7;
+    /* background: linear-gradient(180deg,rgba(22, 48, 49, 1) 0%, rgba(22, 48, 49, 0.74) 50%, rgba(22, 48, 49, 0.44) 100%); */
+    backdrop-filter: blur(20px);
+    box-shadow: 10px 10px 19px #1c1e22;
 }
 
 .logo{

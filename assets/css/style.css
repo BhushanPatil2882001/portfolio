@@ -499,11 +499,11 @@ h1{
 /* portfolio section start */
 
 .portfolio-img-container{
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
     height: 400px;
     width: 100%;
     border-radius: 30px;
-    background-color:rgba(0, 0, 0, 0.466);
+    /* background-color:rgba(0, 0, 0, 0.466); */
     transition: box-shadow 0.3s ease;
 }
 
@@ -546,12 +546,12 @@ h1{
     scale: 1;
 }
 
-.portfolio-img-container:hover{
-  box-shadow: 0px 0px 20px 0px var(--accent-color);
-  animation: shadow 2s linear none infinite;
-}
+/* .portfolio-img-container:hover{ */
+  /* box-shadow: 0px 0px 20px 0px var(--accent-color); */
+  /* animation: shadow 2s linear none infinite; */
+/* } */
 
-@keyframes shadow {
+/* @keyframes shadow {
   0%{
     box-shadow: -10px 0px 20px 0px var(--accent-color);
   }
@@ -567,7 +567,7 @@ h1{
   100%{
     box-shadow: -10px 0px 20px 0px var(--accent-color);
   }
-}
+} */
 
 .portfolio-btn:hover{
     /* rotate: 45deg; */
