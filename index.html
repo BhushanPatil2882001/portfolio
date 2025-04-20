@@ -7,19 +7,28 @@
     <title>portfolio site</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+
     <!-- fonts -->
     <!-- montserrat -->
     <link rel="stylesheet" href="./assets/fonts/montserrat/stylesheet.css" />
     <!-- molle -->
     <link rel="stylesheet" href="./assets/fonts/molle/stylesheet.css">
+
+    <!-- third party css libraries -->
+    <!-- animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- swipper -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <!-- stylessheets -->
+
+    <!-- 3. Base project styles (foundation first) -->
+    <link rel="stylesheet" href="./assets/css/default.css" /> <!-- Navbar, background -->
     <link rel="stylesheet" href="./assets/css/utility.css" />
-    <link rel="stylesheet" href="./assets/css/default.css">
+
+    <!-- main styles -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- media query -->
     <link rel="stylesheet" href="./assets/css/media.css">
 </head>
 
@@ -73,7 +82,9 @@
                         <li class="pointer">
                             <a class="text-white text-decoration-none" href="#foundation">Education</a>
                         </li>
-                        <li class="pointer">Blog</li>
+                        <li class="pointer">
+                            <a class="text-white text-decoration-none" href="#blog">Blog</a>
+                        </li>
                         <li class="pointer pages-li position-relative d-flex align-items-center justify-content-center">
                             Pages 
                             <img src="./assets/images/dropdown-down-arrow.svg" alt="">
@@ -189,7 +200,7 @@
             <!-- Scrolling Ticker End -->
         </div>
         <!-- counter start -->
-        <section class="counter mt-5 pt-5">
+        <section class="counter mt-5 pt-5 overflow-hidden">
             <div class="container">
                 <div class="sectiontitle position-relative z-1 text-white">
                     <h2 class="styled-text">Projects statistics</h2>
@@ -198,25 +209,25 @@
                 <div id="projectFacts" class="sectionClass position-relative z-1 text-white">
                     <div class="fullWidth eight columns">
                         <div class="projectFactsWrap ">
-                            <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                            <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;" data-aos="fade-right">
                                 <i class="fa fa-briefcase"></i>
                                 <p id="number1" class="number styled-text fs-3">12</p>
                                 <!-- <span></span> -->
                                 <p>Projects done</p>
                             </div>
-                            <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                            <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;" data-aos="fade-down">
                                 <i class="fa fa-smile-o"></i>
                                 <p id="number2" class="number styled-text fs-3">55</p>
                                 <!-- <span></span> -->
                                 <p>Happy clients</p>
                             </div>
-                            <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                            <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;" data-aos="fade-up">
                                 <i class="fa fa-coffee"></i>
                                 <p id="number3" class="number styled-text fs-3">359</p>
                                 <!-- <span></span> -->
                                 <p>Cups of coffee</p>
                             </div>
-                            <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+                            <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;" data-aos="fade-left">
                                 <i class="fa fa-camera"></i>
                                 <p id="number4" class="number styled-text fs-3">246</p>
                                 <!-- <span></span> -->
@@ -230,9 +241,9 @@
         <!-- counter end -->
         <!-- Scrolling Ticker Section end -->
         <!-- Our Specialization Section Start -->
-        <section class="our-specialization position-relative z-1 m-180">
+        <section class="our-specialization position-relative z-1 m-180 overflow-hidden">
             <div class="container">
-                <div class="row text-white align-items-center">
+                <div class="row text-white align-items-center" data-aos="fade-down">
                     <div class="col-lg-6">
                         <div class="text-center text-md-start">
                             <p class="position-relative dot-container">
@@ -249,7 +260,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="col-lg-12">
                         <div class="swiper mySwiper text-white">
                             <div class="swiper-wrapper">
@@ -369,17 +380,17 @@
         </section>
         <!-- Our Specialization Section End -->
         <!-- About Me section start -->
-        <section class="about-us position-relative z-1 m-180" id="about-me">
+        <section class="about-us position-relative z-1 m-180 overflow-hidden" id="about-me">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right">
                         <div class="about-us-img position-relative">
                             <figure class=" text-center p-2">
                                 <img  src="./assets/images/circlular-model.png" alt="" class="img-fluid ">
                             </figure>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left">
                         <div class="text-white text-center text-md-start mt-5 mt-md-0">
                             <p class="position-relative dot-container">
                                 <span class="dot"></span>
@@ -428,8 +439,8 @@
         </section>
         <!-- About Us section end -->
         <!-- Our Facts Section Start -->
-        <section class="our-facts position-relative z-1 m-180">
-            <div class="container">
+        <section class="our-facts position-relative z-1 m-180 overflow-hidden">
+            <div class="container" data-aos="fade-left">
                 <div class="styled-border">
                     <div class="row justify-content-center align-items-center">
                         <div class="our-facts-box">
@@ -474,17 +485,17 @@
         </section>
         <!-- Our Facts Section end -->
         <!-- my tools section start -->
-        <section class="my-tools position-relative z-1 m-180 text-white">
+        <section class="my-tools position-relative z-1 m-180 text-white overflow-hidden">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 my-tools-heading text-center text-md-start ps-0">
+                    <div class="col-12 my-tools-heading text-center text-md-start ps-0" data-aos="fade-down">
                         <p class="position-relative dot-container">
                             <span class="dot"></span>
                             My Tools
                         </p>
                         <h2 class="fw-semibold h1">Design, develop, deliver: my <br> <span class="styled-text">essential gear</span></h2>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-right">
                         <div class="gears d-flex flex-wrap align-items-center justify-content-center justify-content-xxl-start">
                             <div class="icon-box ms-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 18.1778L16.6192 16.9222L17.2434 10.1444H9.02648L8.82219 7.88889H17.4477L17.6747 5.67778H6.32535L6.96091 12.3556H14.7806L14.5195 15.2222L12 15.8889L9.48045 15.2222L9.32156 13.3778H7.0517L7.38083 16.9222L12 18.1778ZM3 2H21L19.377 20L12 22L4.62295 20L3 2Z"></path></svg>
@@ -495,7 +506,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-down">
                         <div class="gears d-flex flex-wrap align-items-center justify-content-center justify-content-xxl-start">
                             <div class="icon-box ms-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M5.00006 3L4.35006 6.34H17.9401L17.5001 8.5H3.92006L3.26006 11.83H16.8501L16.0901 15.64L10.6101 17.45L5.86006 15.64L6.19006 14H2.85006L2.06006 18L9.91006 21L18.9601 18L20.1601 11.97L20.4001 10.76L21.9401 3H5.00006Z"></path></svg>
@@ -506,7 +517,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-left">
                         <div class="gears d-flex flex-wrap align-items-center justify-content-center justify-content-xxl-start">
                             <div class="icon-box ms-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM13.3344 16.055C14.0531 16.6343 14.7717 16.9203 15.4904 16.913C15.9304 16.913 16.2677 16.8323 16.5024 16.671C16.7297 16.517 16.8434 16.297 16.8434 16.011C16.8434 15.7177 16.7297 15.4683 16.5024 15.263C16.2677 15.0577 15.8241 14.8523 15.1714 14.647C14.3867 14.4197 13.7817 14.1263 13.3564 13.767C12.9384 13.4077 12.7257 12.9053 12.7184 12.26C12.7184 11.6513 12.9824 11.1417 13.5104 10.731C14.0237 10.3203 14.6801 10.115 15.4794 10.115C16.5941 10.115 17.4887 10.3863 18.1634 10.929L17.3934 12.128C17.1221 11.9153 16.8104 11.7613 16.4584 11.666C16.1064 11.556 15.7911 11.501 15.5124 11.501C15.1311 11.501 14.8267 11.5707 14.5994 11.71C14.3721 11.8493 14.2584 12.0327 14.2584 12.26C14.2584 12.5093 14.3977 12.722 14.6764 12.898C14.9551 13.0667 15.4317 13.2537 16.1064 13.459C16.9204 13.701 17.4997 14.0237 17.8444 14.427C18.1891 14.8303 18.3614 15.3437 18.3614 15.967C18.3614 16.605 18.1157 17.155 17.6244 17.617C17.1404 18.0717 16.4364 18.31 15.5124 18.332C14.3024 18.332 13.2904 17.969 12.4764 17.243L13.3344 16.055ZM7.80405 16.693C8.03872 16.8397 8.32105 16.913 8.65105 16.913C8.99572 16.913 9.28172 16.814 9.50905 16.616C9.73639 16.4107 9.85005 16.055 9.85005 15.549V10.247H11.3351V15.835C11.3131 16.7003 11.0637 17.3237 10.5871 17.705C10.3157 17.9323 10.0187 18.0937 9.69605 18.189C9.37339 18.2843 9.06172 18.332 8.76105 18.332C8.21105 18.332 7.72339 18.2367 7.29805 18.046C6.84339 17.8407 6.46205 17.4777 6.15405 16.957L7.18805 16.11C7.37872 16.3667 7.58405 16.561 7.80405 16.693Z"></path></svg>
@@ -517,7 +528,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-right">
                         <div class="gears d-flex flex-wrap align-items-center justify-content-center justify-content-xxl-start">
                             <div class="icon-box ms-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M1 11L1 13C1 13 3 13 3 17V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V17C21 13 23 13 23 13V11C23 11 21 11 21 7V6C21 4.34315 19.6569 3 18 3L6 3C4.34315 3 3 4.34315 3 6V7C3 11 1 11 1 11ZM20.6742 12C20.6446 12.0278 20.6151 12.0564 20.5858 12.0858C19.5784 13.0931 19 14.6917 19 17V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18V17C5 14.6917 4.42157 13.0931 3.41421 12.0858C3.38486 12.0564 3.35539 12.0278 3.32582 12C3.35539 11.9722 3.38486 11.9436 3.41421 11.9142C4.42157 10.9069 5 9.30829 5 7V6C5 5.44772 5.44772 5 6 5L18 5C18.5523 5 19 5.44772 19 6V7C19 9.30829 19.5784 10.9069 20.5858 11.9142C20.6151 11.9436 20.6446 11.9722 20.6742 12ZM8.5 7V17H13.5C15.1569 17 16.5 15.6569 16.5 14C16.5 12.9377 15.9479 12.0044 15.115 11.4714C15.3601 11.0366 15.5 10.5347 15.5 10C15.5 8.34315 14.1569 7 12.5 7L8.5 7ZM10.5 11V9H12.5C13.0523 9 13.5 9.44772 13.5 10C13.5 10.5523 13.0523 11 12.5 11H10.5ZM10.5 13H13.5C14.0523 13 14.5 13.4477 14.5 14C14.5 14.5523 14.0523 15 13.5 15H10.5V13Z"></path></svg>
@@ -528,7 +539,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up">
                         <div class="gears d-flex flex-wrap align-items-center justify-content-center justify-content-xxl-start">
                             <div class="icon-box ms-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path></svg>
@@ -539,7 +550,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-left">
                         <div class="gears d-flex flex-wrap align-items-center justify-content-center justify-content-xxl-start ">
                             <div class="icon-box ms-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9996 4.85999C8.82628 4.85999 6.84294 6.44665 6.04961 9.61999C7.23961 8.03332 8.62794 7.43832 10.2146 7.83499C11.12 8.06109 11.7666 8.71757 12.4835 9.44545C13.6507 10.6295 15.0004 12 17.9496 12C21.1229 12 23.1063 10.4133 23.8996 7.23998C22.7096 8.82665 21.3213 9.42165 19.7346 9.02499C18.8292 8.79889 18.1827 8.1424 17.4657 7.41452C16.2995 6.23047 14.9498 4.85999 11.9996 4.85999ZM6.04961 12C2.87628 12 0.892943 13.5867 0.0996094 16.76C1.28961 15.1733 2.67794 14.5783 4.26461 14.975C5.17 15.2011 5.81657 15.8576 6.53354 16.5855C7.70073 17.7695 9.05039 19.14 11.9996 19.14C15.1729 19.14 17.1563 17.5533 17.9496 14.38C16.7596 15.9667 15.3713 16.5617 13.7846 16.165C12.8792 15.9389 12.2326 15.2824 11.5157 14.5545C10.3495 13.3705 8.99982 12 6.04961 12Z"></path></svg>
@@ -557,7 +568,7 @@
         <!-- Portfolio Section Start -->
         <section class="porfolio-gallery position-relative z-1 overflow-hidden text-white">
             <div class="container">
-                <div class="portfolio-header row align-items-center gy-5 text-center text-md-start ps-0">
+                <div class="portfolio-header row align-items-center gy-5 text-center text-md-start ps-0" data-aos="fade-down">
                     <div class="col-md-7">
                         <p class="position-relative dot-container">
                             <span class="dot"></span>
@@ -622,16 +633,16 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up">
                     <p class="h5 text-center mt-5">Let's make something great work together. <span class="styled-text">Get Free Quate</span></p>
                 </div>
             </div>
         </section>
         <!-- Portfolio Section End -->
         <!-- Foundation Section Start -->
-        <section class="foundation position-relative z-1 m-180" id="foundation">
+        <section class="foundation position-relative z-1 m-180 overflow-hidden" id="foundation">
             <div class="container text-white">
-                <div class="row">
+                <div class="row" data-aos="fade-down">
                     <div class="col-12">
                         <div class="text-center">
                             <p>Education & Work</p>
@@ -640,7 +651,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right">
                         <div class="foundation-box d-flex flex-column gap-5">
                             <div class="d-flex gap-4 align-items-center mb-4 justify-content-center justify-content-md-start">
                                 <span class="border icon-box">
@@ -671,7 +682,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left">
                         <div class="foundation-box d-flex flex-column gap-5">
                             <div class="d-flex gap-4 align-items-center mb-4 justify-content-center justify-content-md-start">
                                 <span class="border icon-box">
@@ -707,15 +718,15 @@
         </section>
         <!-- Foundation Section End -->
         <!-- workflow section start -->
-        <section class="workflow text-white position-relative z-1 m-180">
+        <section class="workflow text-white position-relative z-1 m-180 overflow-hidden">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-right">
                         <div class="rounded-5 overflow-hidden position-relative">
                             <span class="img-glass-effect"><img class="img-fluid w-100" src="./assets/images/workflow-section/how-it-work-image.jpg" alt=""></span>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-left">
                         <div class="d-flex flex-column gap-3">
                             <p class="position-relative dot-container mt-5 text-center text-md-start ps-0">
                                 <span class="dot"></span>
@@ -772,10 +783,10 @@
         </section>
         <!-- workflow section end -->
         <!-- reviews section start -->
-        <section class="reviews position-relative z-1 text-white m-180">
+        <section class="reviews position-relative z-1 text-white m-180 overflow-hidden">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-right">
                         <div class="text-center text-md-start ps-0">
                             <p class="position-relative dot-container">
                                 <span class="dot"></span>
@@ -801,7 +812,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 mt-lg-0 mt-5">
+                    <div class="col-lg-6 mt-lg-0 mt-5" data-aos="fade-left">
                         <div class="reviews-card">
                             <div class="swiper mySwiper-2 text-white">
                                 <div class="swiper-wrapper">
@@ -878,9 +889,9 @@
         </section>
         <!-- reviews section end -->
         <!-- faq section start -->
-        <section class="faq text-white position-relative z-1 m-180">
+        <section class="faq text-white position-relative z-1 m-180 overflow-hidden">
             <div class="container">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-down">
                     <div class="text-center">
                         <p class="">
                             Frequently Asked Questions
@@ -889,7 +900,7 @@
                     </div>
                 </div>
                 <div class="faqs d-flex align-items-start flex-wrap">
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4" data-aos="fade-right">
                         <div class="contact-us-card d-flex flex-column gap-3">
                             <span>
                                 <img src="./assets/images/faq-section/icon-faq-cta.svg" alt="">
@@ -899,7 +910,7 @@
                             <button class="my-btn fw-semibold">Contact Me Now</button>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8 mt-lg-0 mt-5">
+                    <div class="col-12 col-lg-8 mt-lg-0 mt-5" data-aos="fade-left">
                         <div class="faq-accordian">
                             <ul class="text-black">
                                 <li class="me-5 me-lg-0">
@@ -970,9 +981,9 @@
         </section>
         <!-- faq section end -->
         <!-- blog section start -->
-        <section class="blogs position-relative z-1 m-180 text-white">
+        <section class="blogs position-relative z-1 m-180 text-white overflow-hidden" id="blog">
             <div class="container">
-                <div class="portfolio-header row align-items-center gy-5">
+                <div class="portfolio-header row align-items-center gy-5" data-aos="fade-down">
                     <div class="col-md-7">
                         <p class="position-relative dot-container text-center text-md-start ps-0">
                             <span class="dot"></span>
@@ -988,7 +999,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4 blog mt-lg-0 mt-5">
+                    <div class="col-md-6 col-lg-4 blog mt-lg-0 mt-5" data-aos="fade-right">
                         <div class="blog-container d-flex flex-column gap-2 pointer" data-bs-toggle="modal" data-bs-target="#blog-1">
                             <div class="position-relative overflow-hidden">
                                 <div class="blog-img rounded-4 overflow-hidden img-glass-effect">
@@ -1002,7 +1013,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 blog mt-lg-0 mt-5" data-bs-toggle="modal" data-bs-target="#blog-2">
+                    <div class="col-md-6 col-lg-4 blog mt-lg-0 mt-5" data-bs-toggle="modal" data-bs-target="#blog-2" data-aos="fade-top">
                         <div class="blog-container d-flex flex-column gap-2 pointer">
                             <div class="position-relative overflow-hidden">
                                 <div class="blog-img rounded-4 overflow-hidden img-glass-effect">
@@ -1016,7 +1027,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 blog mt-lg-0 mt-5" data-bs-toggle="modal" data-bs-target="#blog-3">
+                    <div class="col-md-6 col-lg-4 blog mt-lg-0 mt-5" data-bs-toggle="modal" data-bs-target="#blog-3" data-aos="fade-left">
                         <div class="blog-container d-flex flex-column gap-2 pointer">
                             <div class="position-relative overflow-hidden">
                                 <div class="blog-img rounded-4 overflow-hidden img-glass-effect">
@@ -1038,7 +1049,7 @@
         <section class="form-section position-relative z-1 m-180 text-white overflow-hidden" id="form-section">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-right">
                         <div>
                             <p class="position-relative dot-container text-center text-md-start ps-0">
                                 <span class="dot"></span>
@@ -1078,7 +1089,7 @@
                         </div>
                         <div></div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-left">
                         <div class="contact-form mt-5 mt-lg-0">
                             <p>Fill our the form below to connect with me, I'll get back to you soon to discuss your project or answer any questions.</p>
                             <form id="contactForm" action="#" method="POST">
@@ -1572,10 +1583,11 @@
         </div>
     </div>
     <!-- MODAL END -->
-    <script src="./assets/js/boostrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/boostrap.bundle.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/script.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -1616,17 +1628,24 @@
             prevEl: ".swiper-button-prev",
         },
         });
-        // init Isotope
-    var $grid = $('.grid').isotope({
-        // options
-    });
-    // filter items on button click
-    $('.filter-button-group').on( 'click', 'button', function() {
-        var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ 
-            filter: filterValue
+
+        var $grid = $('.grid').isotope({
+            itemSelector: '.element-item',
+            layoutMode: 'fitRows'
+            // options
         });
-    });
+
+        $('.filter-button-group').on( 'click', 'button', function() {
+            $('.filter-gallery-btn').removeClass('active');
+            $(this).addClass("active");
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ 
+                filter: filterValue
+            });
+        });
+      </script>
+      <script>
+        AOS.init();
       </script>
 </body>
 
