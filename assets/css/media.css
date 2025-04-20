@@ -8,23 +8,32 @@
     .swiper-button-prev{
         left: 320px;
     }
+    .swiper-button-prev, .swiper-button-next{
+        top: 300px;
+    }
 }
 
 @media(max-width:1200px){
     .swiper-button-prev{
-        left: 240px;
+        left: 220px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        top: 300px;
     }
 }
 
 @media(max-width:992px){
     .swiper-button-prev{
-        left: 480px;
+        left: 460px;
     }
 }
 
 @media(max-width:768px){
     .swiper-button-prev{
-        left: 300px;
+        left: 280px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        top: 250px;
     }
     .dot{
         display: none;
