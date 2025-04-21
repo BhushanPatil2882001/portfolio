@@ -1130,6 +1130,10 @@ a.rn-btn, button.rn-btn {
     padding-bottom: 60px;
 }
 
+.footer-logo{
+  filter: invert(1);
+}
+
 .main-footer {
     background: linear-gradient(254.54deg, var(--accent-color) 0.03%, var(--accent-secondary-color) 100%);
     padding: 80px 0 0;
