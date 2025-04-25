@@ -26,6 +26,9 @@
     .swiper-button-prev{
         left: 460px;
     }
+    .swiper-button-prev, .swiper-button-next{
+        top: 270px;
+    }
 }
 
 @media(max-width:768px){
@@ -43,7 +46,7 @@
         padding: 120px 0 0 0;
     }
     nav{
-        padding: 20px 30px;
+        padding: 20px 0px;
     }
 }
 
