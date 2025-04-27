@@ -5,6 +5,30 @@ setTimeout(()=>{
     loading.style.display = "none"
 }, 1500)
 
+// custom cursor start
+const cursor = document.getElementById('cursor');
+
+// Update cursor position on mousemove
+document.addEventListener('mousemove', (e) => {
+  const mouseX = e.clientX + window.scrollX;  // Account for horizontal scroll
+  const mouseY = e.clientY + window.scrollY;  // Account for vertical scroll
+
+  cursor.style.left = `${mouseX}px`;
+  cursor.style.top = `${mouseY}px`;
+});
+
+// Add or remove the "clicked" class on mousedown and mouseup
+document.addEventListener('mousedown', () => {
+  cursor.classList.add('clicked'); // Shrink the cursor when mouse is pressed
+});
+
+document.addEventListener('mouseup', () => {
+  cursor.classList.remove('clicked'); // Expand the cursor back when mouse is released
+});
+
+
+// custom cursor end
+
 // workflow accordian
 
 

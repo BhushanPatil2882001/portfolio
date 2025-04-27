@@ -65,6 +65,27 @@ body::before {
     z-index: 0;
 }
 
+/* custom cursor start */
+
+#cursor {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+    z-index: 999999;
+}
+
+.clicked {
+    width: 20px !important;
+    height: 20px !important;
+    transform: translate(-50%, -50%) scale(0.7) !important;
+}
+
+/* custom cursor end */
 
 /* preloader */
 .preloader{
