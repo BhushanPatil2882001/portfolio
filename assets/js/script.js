@@ -8,22 +8,35 @@ setTimeout(()=>{
 // custom cursor start
 const cursor = document.getElementById('cursor');
 
-// Update cursor position on mousemove
-document.addEventListener('mousemove', (e) => {
-  const mouseX = e.clientX + window.scrollX;  // Account for horizontal scroll
-  const mouseY = e.clientY + window.scrollY;  // Account for vertical scroll
+let mouseX = 0;
+let mouseY = 0;
 
-  cursor.style.left = `${mouseX}px`;
-  cursor.style.top = `${mouseY}px`;
+let cursorX = 0;
+let cursorY = 0;
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX + window.scrollX;
+  mouseY = e.clientY + window.scrollY;
 });
 
-// Add or remove the "clicked" class on mousedown and mouseup
+function animateCursor() {
+  cursorX += (mouseX - cursorX) * 0.1;
+  cursorY += (mouseY - cursorY) * 0.1;
+
+  cursor.style.left = `${cursorX}px`;
+  cursor.style.top = `${cursorY}px`;
+
+  requestAnimationFrame(animateCursor);
+}
+
+animateCursor(); 
+
 document.addEventListener('mousedown', () => {
-  cursor.classList.add('clicked'); // Shrink the cursor when mouse is pressed
+  cursor.classList.add('clicked');
 });
 
 document.addEventListener('mouseup', () => {
-  cursor.classList.remove('clicked'); // Expand the cursor back when mouse is released
+  cursor.classList.remove('clicked');
 });
 
 

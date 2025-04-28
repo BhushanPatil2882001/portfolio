@@ -73,12 +73,24 @@ body::before {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: var(--accent-color);
+    border: 2px dashed var(--accent-color);
     pointer-events: none;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(0deg);
     transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
     z-index: 999999;
-}
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Spin animation */
+  @keyframes spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
 
 .clicked {
     width: 20px !important;
