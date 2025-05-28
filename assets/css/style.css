@@ -821,7 +821,7 @@ h1{
     -webkit-backdrop-filter: blur(200px);
     border-radius: 30px;
     padding: 50px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     overflow: hidden;
 }
 
